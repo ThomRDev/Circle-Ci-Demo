@@ -35,7 +35,7 @@ jobs:
         # deploy
       - run:
           name: Vercel Prod Deploy
-          command: vercel --prod --build-env VITE_RICK_AND_MORTY_URL=https://rickandmortyapi.com/api/ --name $VERCEL_PROJECT_NAME --token=$VERCEL_TOKEN 
+          command: vercel --prod --build-env VITE_RICK_AND_MORTY_URL=https://rickandmortyapi.com/api/ --name $VERCEL_PROJECT_NAME --token=$VERCEL_TOKEN --yes
 workflows:
   version: 2
   deploy-reactapp:
